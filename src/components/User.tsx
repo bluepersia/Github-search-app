@@ -10,7 +10,7 @@ export default function User({ user }: { user: IUser }): JSX.Element {
     <div className={styles.user + ' ' + styles[mode.toString()]}>
       <header className={styles.header}>
         <img className={styles.imgAvatar} src={user.avatar_url} alt='Avatar' />
-        {user.name && <h1 className={styles.name}>{user.name}</h1>}
+        <h1 className={styles.name}>{user.name || '(no name)'}</h1>
         <h3 className={styles.login}>{user.login}</h3>
         <p className={styles.body}>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.

@@ -58,3 +58,11 @@ body {
 p {
   line-height: 1.66;
 }
+
+
+@media (min-width: 768px)
+{
+  .container-app {
+    padding: 0 6.4%;
+  }
+}

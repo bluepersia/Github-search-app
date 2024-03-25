@@ -12,9 +12,28 @@
    margin-bottom: 1.06em;
    border-radius: 8px;
 }
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+
+.logo {
+    font-size: 1.73rem;
+    font-weight: bold;
+}
 
 .searchApp.dark .header {
     
     background-color: var(--color-8);
+  }
+
+
+
+  @media (min-width: 768px)
+  {
+    .header{
+        margin-bottom: 1.6em;
+    }
   }

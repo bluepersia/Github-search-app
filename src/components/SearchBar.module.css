@@ -58,3 +58,10 @@
 .btn:hover {
     background-color: hsl(212, 100%, 80%);
 }
+
+@media (min-width: 768px)
+{
+    .input {
+        font-size: 1.2rem;
+    }
+}
