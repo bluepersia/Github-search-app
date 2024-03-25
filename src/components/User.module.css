@@ -103,6 +103,9 @@
 
 @media (min-width: 768px)
 {
+    .user {
+        padding: 2.66em 6.9%;
+    }
     .name {
     font-size:1.73rem;
     }
@@ -125,5 +128,42 @@
 
     .stat_value {
         font-size: 1.46rem;
+    }
+}
+
+@media (min-width: 1440px)
+{
+    .user {
+    padding: 3.2em 6%;
+    }
+    .header 
+    {
+        display: grid;
+        grid-template-columns: 16% auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .imgAvatar {
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+    }
+
+    .name {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .login {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .joined {
+        grid-column: 3 / -1;
+        grid-row: 1 / 2;
+    }
+    .body {
+        grid-column: 2 / -1;
+        grid-row: -2 / -1;
     }
 }

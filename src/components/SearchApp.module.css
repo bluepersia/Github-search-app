@@ -6,9 +6,6 @@
 
 .header {
 
-    transition: background-color 300ms;
-   background-color: white;
-   padding: 2.1em 7%;
    margin-bottom: 1.06em;
    border-radius: 8px;
 }
@@ -23,11 +20,6 @@
     font-size: 1.73rem;
     font-weight: bold;
 }
-
-.searchApp.dark .header {
-    
-    background-color: var(--color-8);
-  }
 
 
 

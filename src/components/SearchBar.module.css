@@ -7,6 +7,7 @@
     background-color: var(--color-6);
     border-radius: 8px;
     transition: background-color 300ms;
+    box-shadow: 0px 5px 15px rgba(0,0,0,10%);
 }
 
 .searchBar.dark {
@@ -39,7 +40,7 @@
     position: absolute;
     bottom: 0px;
     right: 1.6em;
-    color:red;
+    color:#F74646;
 }
 
 .btn {
@@ -61,6 +62,10 @@
 
 @media (min-width: 768px)
 {
+
+    .searchBar {
+        padding: .66em 1.7% .66em 5%;
+    }
     .input {
         font-size: 1.2rem;
     }
