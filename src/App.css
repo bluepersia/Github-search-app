@@ -6,7 +6,7 @@
     --color-4: hsl(217, 21% 21%);
     --color-5: hsl(227, 100%, 98%);
     --color-6: hsl(0, 0%, 100%);
-    --color-7: hsl(220, 48%, 13%)
+    --color-7: hsl(220, 40%, 13%);
     --color-8: hsl(222, 41%, 20%);
 }
 
@@ -25,13 +25,13 @@ body {
   color: var(--color-3);
 }
 
-.container {
+.container-app {
   width: 100%;
   min-height: 100vh;
   background-color: var(--color-5);
 }
 
-.container.light 
+.container-app.dark 
 {
   color: var(--color-6);
   background-color: var(--color-7);

@@ -1,0 +1,43 @@
+
+
+.toggle 
+{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: inherit;
+    background-color: transparent;
+    color:inherit;
+    border:none;
+    font-size: .86rem;
+    font-weight: bold;
+    letter-spacing: 0.19em;
+    cursor: pointer;
+    transition: color 300ms;
+}
+
+
+.toggle:hover {
+    color: var(--color-7);
+}
+
+.toggle.light:hover  {
+    color: var(--color-3);
+}
+
+
+.icon path {
+    transition: fill 300ms;
+}
+.toggle:hover .icon path
+{
+    fill: var(--color-7);
+}
+.toggle.light:hover .icon path {
+    fill: var(--color-3);
+}
+
+.icon {
+    margin-left: 1.06em;
+}
+
