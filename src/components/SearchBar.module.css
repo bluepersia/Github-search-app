@@ -8,6 +8,9 @@
     border-radius: 8px;
 }
 
+.searchBar.dark {
+    background-color: var(--color-8);
+}
 
 
 .icon {

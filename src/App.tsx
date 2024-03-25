@@ -2,6 +2,7 @@ import { createContext, useState } from 'react';
 import './App.css';
 import Toggle from './components/Toggle';
 import SearchBar from './components/SearchBar';
+import Link from './components/Link';
 
 export enum Mode {
   Dark = 'dark',
@@ -29,6 +30,7 @@ function App() {
       <div className={`container-app ${mode.toString()}`}>
         <Toggle />
         <SearchBar />
+        <Link>www.link.com</Link>
       </div>
     </AppContext.Provider>
   );
