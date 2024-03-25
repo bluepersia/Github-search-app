@@ -10,10 +10,10 @@ import {
 import { AppContext } from '../App';
 
 export default function SearchBar({
-  search,
+  setSearch,
   error,
 }: {
-  search: Dispatch<SetStateAction<string>>;
+  setSearch: Dispatch<SetStateAction<string>>;
   error?: string;
 }): JSX.Element {
   const [name, setName] = useState<string>('');
@@ -27,7 +27,7 @@ export default function SearchBar({
   function handleFormSubmit(e: FormEvent): void {
     e.preventDefault();
 
-    search(name);
+    setSearch(name);
   }
 
   return (
