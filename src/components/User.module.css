@@ -123,6 +123,12 @@
         font-size: 1rem;
     }
 
+    .main {
+        padding: 1em 6.4%;
+        justify-content: start;
+        text-align: left;
+    }
+
     .stat_label {
         font-size: .86rem;
     }
@@ -192,5 +198,9 @@
     .body {
         grid-column: 2 / -1;
         grid-row: -2 / -1;
+    }
+
+    .main {
+        padding: 1em 6.6%;
     }
 }
