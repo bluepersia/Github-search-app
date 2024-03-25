@@ -30,8 +30,11 @@ body {
   min-height: 100vh;
   background-color: var(--color-5);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 6.4%;
+  transition: color 300ms, background-color 300ms;
 }
 
 .container-app.dark 
@@ -54,20 +57,4 @@ body {
 }
 p {
   line-height: 1.66;
-}
-
-h1, h2 {
-  font-size: 1.066rem;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: .866rem;
-  font-weight: normal;
-}
-
-h4 
-{
-  font-size: 0.73rem;
-  font-weight: normal;
 }
