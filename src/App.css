@@ -1,42 +1,69 @@
+:root 
+{
+    --color-1: hsl(212, 100%, 50%);
+    --color-2: hsl(217, 28%, 51%);
+    --color-3: hsl(217, 35%, 45%);
+    --color-4: hsl(217, 21% 21%);
+    --color-5: hsl(227, 100%, 98%);
+    --color-6: hsl(0, 0%, 100%);
+    --color-7: hsl(220, 48%, 13%)
+    --color-8: hsl(222, 41%, 20%);
+}
+
+html {
+  font-size: 15px;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width:100vw;
+  min-height: 100vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  color: var(--color-3);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container.light 
+{
+  color: var(--color-6);
+  background-color: var(--color-7);
 }
 
-.card {
-  padding: 2em;
+* {
+  box-sizing: border-box;
 }
 
-.read-the-docs {
-  color: #888;
+* :first-child {
+  margin-top: 0;
+}
+
+* :last-child {
+  margin-bottom: 0;
+}
+p {
+  line-height: 1.66;
+}
+
+h1, h2 {
+  font-size: 1.066rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: .866rem;
+  font-weight: normal;
+}
+
+h4 
+{
+  font-size: 0.73rem;
+  font-weight: normal;
 }
