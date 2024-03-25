@@ -1,8 +1,7 @@
 import { createContext, useState } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import './App.css';
-import Toggle from './components/Toggle';
-import SearchBar from './components/SearchBar';
-import Link from './components/Link';
+import SearchApp from './components/SearchApp';
 
 export enum Mode {
   Dark = 'dark',
@@ -19,6 +18,8 @@ export const AppContext = createContext<AppContextType>({
   toggleMode: () => {},
 });
 
+const queryClient = new QueryClient();
+
 function App() {
   const [mode, setMode] = useState<Mode>(Mode.Light);
 
@@ -26,13 +27,13 @@ function App() {
     setMode((mode) => (mode === Mode.Dark ? Mode.Light : Mode.Dark));
   }
   return (
-    <AppContext.Provider value={{ mode, toggleMode }}>
-      <div className={`container-app ${mode.toString()}`}>
-        <Toggle />
-        <SearchBar />
-        <Link>www.link.com</Link>
-      </div>
-    </AppContext.Provider>
+    <QueryClientProvider client={queryClient}>
+      <AppContext.Provider value={{ mode, toggleMode }}>
+        <div className={`container-app ${mode.toString()}`}>
+          <SearchApp />
+        </div>
+      </AppContext.Provider>
+    </QueryClientProvider>
   );
 }
 
