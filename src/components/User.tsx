@@ -4,8 +4,25 @@ import Link from './Link';
 import styles from './User.module.css';
 import { AppContext } from '../App';
 
+const months = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec',
+];
+
 export default function User({ user }: { user: IUser }): JSX.Element {
   const { mode } = useContext(AppContext);
+
+  const createdAtDate = new Date(user.created_at);
   return (
     <div className={styles.user + ' ' + styles[mode.toString()]}>
       <header className={styles.header}>
@@ -16,7 +33,14 @@ export default function User({ user }: { user: IUser }): JSX.Element {
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
           Quisque volutpat mattis eros.
         </p>
-        <p className={styles.joined}>Joined {user.created_at}</p>
+        <p className={styles.joined}>
+          Joined{' '}
+          {createdAtDate.getDay() +
+            ' ' +
+            months[createdAtDate.getMonth()] +
+            ' ' +
+            createdAtDate.getFullYear()}
+        </p>
       </header>
       <main className={styles.main}>
         <div className={styles.stat}>
