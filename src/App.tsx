@@ -1,6 +1,7 @@
 import { createContext, useState } from 'react';
 import './App.css';
 import Toggle from './components/Toggle';
+import SearchBar from './components/SearchBar';
 
 export enum Mode {
   Dark = 'dark',
@@ -27,6 +28,7 @@ function App() {
     <AppContext.Provider value={{ mode, toggleMode }}>
       <div className={`container-app ${mode.toString()}`}>
         <Toggle />
+        <SearchBar />
       </div>
     </AppContext.Provider>
   );

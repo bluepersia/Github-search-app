@@ -37,6 +37,10 @@ body {
   background-color: var(--color-7);
 }
 
+.container-app.dark > * {
+  background-color: var(--color-8);
+}
+
 * {
   box-sizing: border-box;
 }
