@@ -4,11 +4,13 @@ import { AppContext } from '../App';
 type Props = {
   url?: string;
   unavailable?: boolean;
+  className?: string;
 };
 
 export default function Link({
   url = '',
   unavailable = false,
+  className = '',
   children,
 }: PropsWithChildren<Props>): JSX.Element {
   const { mode } = useContext(AppContext);
@@ -21,7 +23,9 @@ export default function Link({
         ' ' +
         styles[mode.toString()] +
         ' ' +
-        (unavailable ? styles.unavailable : '')
+        (unavailable ? styles.unavailable : '') +
+        ' ' +
+        className
       }
     >
       {children}
