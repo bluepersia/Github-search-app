@@ -6,6 +6,7 @@
     width: 100%;
     background-color: var(--color-6);
     border-radius: 8px;
+    transition: background-color 300ms;
 }
 
 .searchBar.dark {
@@ -23,7 +24,7 @@
 }
 
 .input {
-    font-size: inherit;
+    font-size: 0.86rem;
     font-family: inherit;
     width: 100%;
     background-color: transparent;

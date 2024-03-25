@@ -1,0 +1,97 @@
+
+.user {
+   padding: 2.1em 7%;
+   background-color: white;
+   border-radius: 8px;
+}
+
+.user.dark {
+    background-color: var(--color-8);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 21.4% auto;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 5.8%;
+    align-items: center;
+    margin-bottom: 1.53em;
+}
+
+.imgAvatar 
+{   
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    width: 100%;
+    display: block;
+    align-self: center;
+    border-radius: 50%;
+
+}
+
+.name {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    font-size: 1.06rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.login {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+    font-size: 0.86;
+    font-weight: normal;
+    color: var(--color-1);
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.joined {
+    grid-column: 2 / -1;
+    grid-row: 3 / 4;
+    margin-top: .46em;
+    margin-bottom: 0;
+    font-size: .86em;
+}
+
+.body 
+{
+    grid-column: 1 / -1;
+    grid-row:  4 / -1;
+    font-size: .88rem;
+}
+
+.main {
+    display: flex;
+    background-color: var(--color-5);
+    justify-content: center;
+    padding: 1.2em 5%;
+    margin-bottom: 1.6em;
+}
+
+.user.dark .main {
+    background-color: var(--color-7);
+}
+
+.stat {
+    width: 28.6%;
+    text-align: center;
+}
+
+.stat_label {
+    font-size: .73em;
+    margin-bottom: 0;
+}
+
+.stat_value {
+    font-size: 1.06em;
+    margin-top: 0;
+    color: var(--color-4);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.06em;
+}

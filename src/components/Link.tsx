@@ -7,7 +7,7 @@ type Props = {
 };
 
 export default function Link({
-  url = '#',
+  url = '',
   unavailable = false,
   children,
 }: PropsWithChildren<Props>): JSX.Element {

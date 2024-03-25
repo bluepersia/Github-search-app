@@ -11,6 +11,14 @@
     border:none;
     font-family: inherit;
     font-size: inherit;
+    transition: color 300ms;
+}
+
+.link svg {
+    width: 20px;
+}
+.link svg path {
+    transition: fill 300ms;
 }
 
 .link:hover {
